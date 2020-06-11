@@ -1,0 +1,31 @@
+﻿@page "/"
+
+@inject IJSRuntime jsRuntime
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button id="btn" @onclick="UpdateTitle">Split View</button>
+
+<h1>Split.js</h1>
+<div id="splitedBox">
+    <div id="glidOne" class="split split-horizontal">
+        <p>Left Content</p>
+        <FetchData/>
+    </div>
+    <div id="glidTwo" class="split split-horizontal">
+        <p>Right Content</p>
+        <FetchData />
+    </div>
+</div>
+
+
+@code {
+
+    private async void UpdateTitle()
+    {
+        jsRuntime.InvokeVoidAsync("accessDOMElement");
+    }
+}
+
