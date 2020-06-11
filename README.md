@@ -1,5 +1,6 @@
 # BlazorSplitViewSample
 - Blazorのサーバサイドサンプルをベースにsplit.jsを動作させているサンプルアプリです。
+- `Split View`ボタンを押下すると、画面が分割されます。
 
 # 動作環境
 - Visual Studio 2019
